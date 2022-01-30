@@ -182,7 +182,7 @@ footer{
 
 footer i{
     color: var(--color_1);
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-left: .5rem;
 }
 footer i:hover{
