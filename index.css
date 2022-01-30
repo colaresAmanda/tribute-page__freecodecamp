@@ -1,206 +1,293 @@
 /*======Reset========*/
-body, h1, h2, figure, p{
-    margin: 0;
+body,
+h1,
+h2,
+figure,
+p {
+  margin: 0;
 }
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
-    color: var(--color_2);
+a {
+  text-decoration: none;
+  color: var(--color_2);
 }
 
 /*=====General Config========*/
-:root{
-    --title-font: 'Libre Baskerville', serif;
-    --body-font: 'Lato', sans-serif;
-    --color_1: #fbfaf8;
-    --color_2: #37383A;
-    --color_3: #948c57;
-
+:root {
+  --title-font: "Libre Baskerville", serif;
+  --body-font: "Lato", sans-serif;
+  --color_1: #fbfaf8;
+  --color_2: #37383a;
+  --color_3: #948c57;
 }
 
-body{
-    font: 400 .75rem var(--title-font);
-    color: var(--color_2);
+body {
+  font: 400 0.75rem var(--title-font);
+  color: var(--color_2);
 
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 /*======Menu========*/
-header{
-    position: fixed;
-    top:0;
-    width: 100%;
-    background: var(--color_1);
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.10);
-    z-index: 10;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--color_1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
-header ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header ul li{
-    font: 400 .75rem var(--title-font);
-    padding: .5rem 1rem .5rem 1rem;
-}
-
-header ul li a:hover{
-    cursor: pointer;
-    color: var(--color_3);
-    text-decoration: underline;
+header ul li {
+  font: 400 0.75rem var(--title-font);
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-
-/*============main===========*/
-#home{
-    width: 100%;
-    background-color: var(--color_1);
-    
+header ul li a:hover {
+  cursor: pointer;
+  color: var(--color_3);
+  text-decoration: underline;
 }
 
-#home h1{
-    padding: 2rem 15% 0 15%;
-    font: 400 1.5rem var(--title-font);
-    color: var(--color_2);
-}
-#home p#detail{
-    color: var(--color_3);
+/*------------------------MOBILE----------------/*
+/*============Home===========*/
+#home {
+  width: 100%;
+  background-color: var(--color_1);
 }
 
-#home p{
-    padding: 1rem 15% 0 15%;
-    text-align: justify;
-    color: var(--color_2);
+#home h1 {
+  padding: 2rem 15% 0 15%;
+  font: 400 1.5rem var(--title-font);
+  color: var(--color_2);
+}
+#home p#detail {
+  color: var(--color_3);
 }
 
-#home figure{
-    padding: 10% 1.5rem 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#home p {
+  padding: 1rem 15% 0 15%;
+  text-align: justify;
+  color: var(--color_2);
 }
 
-#home img{
-    width: 80%;
+#home figure {
+  padding: 10% 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home img {
+  width: 80%;
 }
 
 /*========Biography============*/
-#biography{
-    padding: 10% 15% 2rem 15%;
-    background-color: var(--color_1);
+#biography {
+  padding: 10% 15% 2rem 15%;
+  background-color: var(--color_1);
 }
 
-#biography p{
-    text-align: justify;
-    margin: 1rem 0 0 0;
+#biography p {
+  text-align: justify;
+  margin: 1rem 0 0 0;
 }
 
 /*=======Quote==========*/
-#quote{
-    padding: 10% 15% 2rem 15%;
-    background-color: var(--color_2);
-    color: var(--color_1);
+#quote {
+  padding: 10% 15% 2rem 15%;
+  background-color: var(--color_2);
+  color: var(--color_1);
 }
 
-#quote p{
-    font-size: 1rem;
-    text-align: justify;
-    margin-bottom: 1rem;
+#quote p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 1rem;
 }
 
-#quote a{
-    font-size: .75rem;
-    color: var(--color_1);
+#quote a {
+  font-size: 0.75rem;
+  color: var(--color_1);
 }
-#quote a:hover{
-   text-decoration: underline;
+#quote a:hover {
+  text-decoration: underline;
 }
 
 /*=======Gallery============*/
-#gallery{
-    width: 100%;
-    background-color: var(--color_1);
-    color: var(--color_2);
+#gallery {
+  width: 100%;
+  background-color: var(--color_1);
+  color: var(--color_2);
 }
-#gallery h2{
-    display: flex;
-    justify-content: center;
+#gallery h2 {
+  display: flex;
+  justify-content: center;
 
-    padding: 10% 15% 0 15%;
+  padding: 10% 15% 0 15%;
 }
-#gallery figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    padding: 2rem;
+  padding: 2rem;
 }
-#gallery img{
-    width: 80%;
+#gallery img {
+  width: 80%;
 }
 
-#gallery small{
-    font-size: .5rem;
+#gallery small {
+  font-size: 0.5rem;
 }
 
 /*=======Sources==========*/
-#sources{
-    padding: 10% 15% 3rem 15%;
-    background-color: var(--color_1);
+#sources {
+  padding: 10% 15% 3rem 15%;
+  background-color: var(--color_1);
 }
-#sources p{
-    margin-top: 1rem;
-}
-
-#sources p a{
-    text-align: justify;
-    color: var(--color_3);
+#sources p {
+  margin-top: 0.5rem;
 }
 
-#sources p a:hover{
-    text-decoration: underline;
+#sources p a {
+  text-align: justify;
+  color: var(--color_3);
 }
 
+#sources p a:hover {
+  text-decoration: underline;
+}
 
 /*=========footer==========*/
-footer{
-    background-color: var(--color_2);
+footer {
+  background-color: var(--color_2);
 
-    font: 400 .5rem var(--title-font);
+  font: 400 0.5rem var(--title-font);
+  color: var(--color_1);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+footer i {
+  color: var(--color_1);
+  font-size: 1.25rem;
+  padding-left: 0.5rem;
+}
+footer i:hover {
+  color: var(--color_3);
+}
+
+footer #design-credits,
+footer #development-credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #design-credits a,
+footer #development-credits a {
+  color: var(--color_1);
+}
+footer #design-credits p a:hover,
+footer #development-credits p a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------TABLET----------------*/
+@media (min-width: 801px) {
+  /*============Home===========*/
+  #home {
+    width: 100%;
+    background-color: var(--color_1);
+    display: flex;
+  }
+
+  #home__text {
+    padding: 10% 10% 2rem 15%;
+  }
+
+  #home h1 {
+    padding: 0 0 0.5rem 0 !important;
+  }
+
+  #home p {
+    padding: 0.5rem 0 0 0 !important;
+  }
+
+  #home figure {
+    padding: 10% 15% 0 0 !important;
+  }
+
+  #home figcaption {
+    font-size: 0.5rem;
+  }
+
+  #home img {
+    width: 100%;
+  }
+
+  /*========Biography============*/
+  #biography {
+    padding: 5% 15% 10% 15%;
+  }
+
+  /*=======Quote==========*/
+  #quote {
+    padding: 5% 15% 5% 15%;
+    background-color: var(--color_2);
+    color: var(--color_1);
+  }
+  #quote a {
+    font-size: 0.75rem;
+  }
+
+  /*=======Gallery============*/
+  #gallery {
+    width: 100%;
+    background-color: var(--color_1);
+    color: var(--color_2);
+  }
+  #gallery h2 {
+    padding-bottom: 5%;
+  }
+  #row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 11% 0 11%;
+  }
+  #gallery figure {
+    padding: 1rem 0 1rem 0 !important;
+  }
+
+  /*=======Sources==========*/
+  #sources {
+    padding: 5% 15% 5% 15%;
+    background-color: var(--color_1);
+  }
+  #sources p {
+    margin-top: 0.5rem;
+  }
+
+  /*=========footer==========*/
+  footer {
+    font: 400 1rem var(--title-font);
     color: var(--color_1);
 
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem 1rem 1rem;
-}
-
-footer i{
-    color: var(--color_1);
-    font-size: 1.25rem;
-    padding-left: .5rem;
-}
-footer i:hover{
-    color: var(--color_3);
-}
-
-footer #design-credits,
-footer #development-credits{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer #design-credits a,
-footer #development-credits a{
-    color: var(--color_1);
-}
-footer #design-credits p a:hover,
-footer #development-credits p a:hover{
-    text-decoration: underline;
+    padding: 2rem 10% 2rem 10%;
+  }
 }
