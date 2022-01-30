@@ -151,7 +151,7 @@ header ul li a:hover{
 
 /*=======Sources==========*/
 #sources{
-    padding: 10% 15% 2rem 15%;
+    padding: 10% 15% 3rem 15%;
     background-color: var(--color_1);
 }
 #sources p{
@@ -177,12 +177,12 @@ footer{
 
     display: flex;
     justify-content: space-between;
-    padding: 1rem 10% 1rem 10%;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 footer i{
     color: var(--color_1);
-    font-size: .75 rem;
+    font-size: 1rem;
     padding-left: .5rem;
 }
 footer i:hover{
@@ -191,7 +191,6 @@ footer i:hover{
 
 footer #design-credits,
 footer #development-credits{
-    
     display: flex;
     justify-content: center;
     align-items: center;
