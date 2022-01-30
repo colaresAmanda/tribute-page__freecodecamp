@@ -173,7 +173,7 @@ header ul li a:hover {
 footer {
   background-color: var(--color_2);
 
-  font: 400 0.5rem var(--title-font);
+  font: 400 .5rem var(--title-font);
   color: var(--color_1);
 
   display: flex;
@@ -183,8 +183,8 @@ footer {
 
 footer i {
   color: var(--color_1);
-  font-size: 1.25rem;
-  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  padding-left: .5rem;
 }
 footer i:hover {
   color: var(--color_3);
