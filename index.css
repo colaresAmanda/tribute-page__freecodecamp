@@ -173,7 +173,7 @@ header ul li a:hover {
 footer {
   background-color: var(--color_2);
 
-  font: 400 .5rem var(--title-font);
+  font: 400 0.5rem var(--title-font);
   color: var(--color_1);
 
   display: flex;
@@ -184,7 +184,7 @@ footer {
 footer i {
   color: var(--color_1);
   font-size: 1.5rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 footer i:hover {
   color: var(--color_3);
@@ -207,7 +207,7 @@ footer #development-credits p a:hover {
 }
 
 /*------------------------TABLET----------------*/
-@media (min-width: 801px) {
+@media (min-width: 767px) {
   /*============Home===========*/
   #home {
     width: 100%;
@@ -247,8 +247,6 @@ footer #development-credits p a:hover {
   /*=======Quote==========*/
   #quote {
     padding: 5% 15% 5% 15%;
-    background-color: var(--color_2);
-    color: var(--color_1);
   }
   #quote a {
     font-size: 0.75rem;
@@ -283,11 +281,202 @@ footer #development-credits p a:hover {
 
   /*=========footer==========*/
   footer {
-    font: 400 1rem var(--title-font);
+    font: 400 0.75rem var(--title-font);
     color: var(--color_1);
 
     display: flex;
     justify-content: space-between;
     padding: 2rem 10% 2rem 10%;
+  }
+}
+
+/*--------------------LARGE DEVICES----------------*/
+@media (min-width: 1200px) {
+  /*============Home===========*/
+  body {
+    font: 400 1rem var(--title-font);
+  }
+  #home {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+  }
+  #home__text {
+    padding: 0 5% 0 25%;
+  }
+
+  #home figure {
+    padding: 5% 25% 0 0 !important;
+    text-align: center;
+  }
+  #home img {
+    width: 12rem;
+  }
+
+  /*========Biography============*/
+  #biography {
+    padding: 5% 25% 10% 25%;
+  }
+
+  /*=======Quote==========*/
+  #quote {
+    padding: 5% 25% 5% 25%;
+  }
+  /*=======Gallery============*/
+  #gallery {
+    width: 100%;
+    background-color: var(--color_1);
+    color: var(--color_2);
+  }
+  #gallery h2 {
+    padding-bottom: 5%;
+  }
+  #row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 11% 0 11%;
+  }
+  #gallery figure {
+    padding: 1rem 0 1rem 0 !important;
+  }
+  /*=======Sources==========*/
+  #sources {
+    padding: 5% 25% 5% 25%;
+    background-color: var(--color_1);
+  }
+  #sources p {
+    margin-top: 0.5rem;
+  }
+
+  /*=========footer==========*/
+  footer {
+    background-color: var(--color_2);
+
+    font: 400 1rem var(--title-font);
+    color: var(--color_1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5 15% 5% 15%;
+  }
+
+  footer i {
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin: 0 5% 0 5%;
+  }
+
+  footer #design-credits,
+  footer #development-credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*--------------------DESKTOP----------------*/
+@media (min-width: 1600px) {
+  /*======Menu========*/
+  header ul li {
+    font: 400 1rem var(--title-font);
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+  /*============Home===========*/
+  body {
+    font: 400 1rem var(--title-font);
+  }
+  #home {
+    padding: 5% 0 0 0;
+  }
+  #home__text {
+    padding: 0 5% 0 20%;
+  }
+  #home h1 {
+    font-size: 3rem;
+  }
+  #home p {
+    padding: 1rem 0 0 0 !important;
+    text-align: justify;
+  }
+  #home figure {
+    padding: 0 20% 0 0 !important;
+  }
+
+  #home figcaption {
+    font-size: 0.75rem;
+  }
+  #home img {
+    width: 24rem;
+  }
+  /*========Biography============*/
+  #biography {
+    padding: 5% 20% 10% 20%;
+  }
+
+  /*=======Quote==========*/
+  #quote {
+    padding: 5% 20% 5% 20%;
+  }
+  #quote p {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  #quote a {
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+  }
+  /*=======Gallery============*/
+  #gallery h2 {
+    padding: 5% 20% 5% 20%;
+  }
+  #row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 17% 0 17%;
+  }
+  #gallery figure figcaption {
+    font-size: 1rem;
+  }
+
+  #gallery figure small {
+    font-size: 0.65rem;
+  }
+  /*=======Sources==========*/
+  #sources {
+    padding: 5% 20% 5% 20%;
+    background-color: var(--color_1);
+  }
+  #sources p {
+    margin-top: 0.5rem;
+  }
+
+  /*=========footer==========*/
+  footer {
+    background-color: var(--color_2);
+
+    font: 400 .75rem var(--title-font);
+    color: var(--color_1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 20% 1rem 20%;
+  }
+
+  footer i {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    margin: 0 5% 0 5%;
+  }
+
+  footer #design-credits,
+  footer #development-credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
